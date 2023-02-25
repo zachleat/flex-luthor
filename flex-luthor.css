@@ -6,9 +6,7 @@
   --fl-margin-v: 0px; /* This needs to have a unit for calc() below */
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  margin-top: calc(-1 * var(--fl-margin-v, 0px));
-  margin-left: calc(-1 * var(--fl-margin-h, 0px));
+  gap: var(--fl-margin-v, 0px) var(--fl-margin-h, 0px);
 }
 .fl-cell {
   /* if a margin is in play, account for this in our stackpoint calculations */
@@ -19,9 +17,6 @@
   flex-grow: 1;
   /* This will always have a value, due to CSS variable defaults set in .fl above */
   flex-basis: var(--fl-stackpoint-calc);
-  margin: 0;
-  margin-top: var(--fl-margin-v, 0);
-  margin-left: var(--fl-margin-h, 0);
 }
 .fl-cell-wrap {
   flex-basis: auto;

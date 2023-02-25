@@ -2,8 +2,8 @@
 @supports (clip-path: inset(0px 0px)) or (-webkit-clip-path: inset(0px 0px)) {
   .fl-separator-v,
   .fl-separator-h {
-    -webkit-clip-path: inset(var(--fl-margin-v, 0px) 0 0 var(--fl-margin-h, 0px));
-    clip-path: inset(var(--fl-margin-v, 0px) 0 0 var(--fl-margin-h, 0px));
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
   }
   .fl-separator-v > .fl-cell,
   .fl-separator-h > .fl-cell {
