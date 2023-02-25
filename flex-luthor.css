@@ -11,7 +11,7 @@
 .fl > * {
   /* if a margin is in play, account for this in our stackpoint calculations */
   /* notably this will also work if a stackpoint is not used. */
-  --fl-margin-mod: calc( var(--fl-stackpoint, -1 * var(--fl-margin-h, 0px)) - var(--fl-stackpoint, 0px) + var(--fl-margin-h, 0px) );
+  --fl-margin-mod: calc( var(--fl-stackpoint, -1 * var(--fl-margin-h, 0px)) - var(--fl-stackpoint, 0px) );
   --fl-stackpoint-calc: calc( ( var(--fl-stackpoint, 100%) - 100% + var(--fl-margin-mod, 0px) ) * 999);
 
   flex-grow: 1;
