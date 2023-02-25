@@ -11,7 +11,7 @@ A small wrapper library to help with responsive intrinsic-sized Flexbox layouts 
 Available on [npm](https://www.npmjs.com/package/@zachleat/flex-luthor).
 
 ```
-npm install flex-luthor --save
+npm install @zachleat/flex-luthor --save
 ```
 
 ## Versions
