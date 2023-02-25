@@ -5,11 +5,11 @@
     -webkit-clip-path: inset(0 0 0 0);
     clip-path: inset(0 0 0 0);
   }
-  .fl-separator-v > .fl-cell,
-  .fl-separator-h > .fl-cell {
+  .fl-separator-v > *,
+  .fl-separator-h > * {
     position: relative;
   }
-  .fl-separator-h > .fl-cell:before {
+  .fl-separator-h > *:before {
     content: "";
     position: absolute;
     left: calc(-.5 * var(--fl-margin-h, 0) - .5px);
@@ -17,7 +17,7 @@
     bottom: 0;
     border-left: 1px solid var(--fl-separator-h-color, var(--fl-separator-color, rgba(162,208,239,.35)));
   }
-  .fl-separator-v > .fl-cell:after {
+  .fl-separator-v > *:after {
     content: "";
     position: absolute;
     left: 0;

@@ -1,19 +1,19 @@
 /* Debug Background colors */
-.fl-debug > .fl-cell:nth-child(6n) {
+.fl-debug > :nth-child(6n) {
   background-color: #fea3aa;
 }
-.fl-debug > .fl-cell:nth-child(6n+1) {
+.fl-debug > :nth-child(6n+1) {
   background-color: #f8b88b;
 }
-.fl-debug > .fl-cell:nth-child(6n+2) {
+.fl-debug > :nth-child(6n+2) {
   background-color: #faf884;
 }
-.fl-debug > .fl-cell:nth-child(6n+3) {
+.fl-debug > :nth-child(6n+3) {
   background-color: #baed91;
 }
-.fl-debug > .fl-cell:nth-child(6n+4) {
+.fl-debug > :nth-child(6n+4) {
   background-color: #b2cefe;
 }
-.fl-debug > .fl-cell:nth-child(6n+5) {
+.fl-debug > :nth-child(6n+5) {
   background-color: #f2a2e8;
 }

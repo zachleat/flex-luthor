@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   gap: var(--fl-margin-v, 0px) var(--fl-margin-h, 0px);
 }
-.fl-cell {
+.fl > * {
   /* if a margin is in play, account for this in our stackpoint calculations */
   /* notably this will also work if a stackpoint is not used. */
   --fl-margin-mod: calc( var(--fl-stackpoint, -1 * var(--fl-margin-h, 0px)) - var(--fl-stackpoint, 0px) + var(--fl-margin-h, 0px) );
@@ -23,12 +23,12 @@
 }
 
 /* Flex layout inline */
-.fl-inline > .fl-cell {
+.fl-inline > * {
   flex-grow: 0;
 }
 
 /* Debug */
-.fl-debug .fl-cell {
+.fl-debug > * {
   outline: 1px dotted rgba(0,0,0,.4);
   outline-offset: -1px;
 }

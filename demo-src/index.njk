@@ -83,11 +83,8 @@
 		/* Code */
 
 		/* Flex Luthor demo styles */
-		.fl-cell {
+		.fl > * {
 			padding: 1em;
-		}
-		.demo-fl-minwidth > .fl-cell {
-			min-width: 100px;
 		}
 		</style>
 		<script src="https://unpkg.com/resizeasaurus@1.0.2/resizeasaurus.js" async></script>
@@ -101,8 +98,8 @@
 			<h3>Two Column</h3>
 {% example "html" %}
 <div class="fl fl-debug">
-	<div class="fl-cell">First cell</div>
-	<div class="fl-cell">Second cell</div>
+	<div>First cell</div>
+	<div>Second cell</div>
 </div>
 {% endexample %}
 
@@ -111,11 +108,11 @@
 
 {% example "html" %}
 <div class="fl fl-debug">
-	<div class="fl-cell">First cell</div>
-	<div class="fl-cell">Second cell</div>
-	<div class="fl-cell">Third cell</div>
-	<div class="fl-cell">Fourth cell</div>
-	<div class="fl-cell">Fifth cell</div>
+	<div>First cell</div>
+	<div>Second cell</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
 </div>
 {% endexample %}
 
@@ -126,33 +123,33 @@
 			<h3>Horizontal (<code>--fl-margin-h: 1em</code>)</h3>
 {% example "html" %}
 <div class="fl fl-debug" style="--fl-margin-h: 1em">
-	<div class="fl-cell">First cell</div>
-	<div class="fl-cell">Second cell</div>
-	<div class="fl-cell">Third cell</div>
-	<div class="fl-cell">Fourth cell</div>
-	<div class="fl-cell">Fifth cell</div>
+	<div>First cell</div>
+	<div>Second cell</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
 </div>
 {% endexample %}
 
 			<h3>Vertical  (<code>--fl-margin-v: .5em</code>)</h3>
 {% example "html" %}
 <div class="fl fl-debug" style="--fl-margin-v: .5em">
-	<div class="fl-cell">First cell</div>
-	<div class="fl-cell">Second cell</div>
-	<div class="fl-cell">Third cell</div>
-	<div class="fl-cell">Fourth cell</div>
-	<div class="fl-cell">Fifth cell</div>
+	<div>First cell</div>
+	<div>Second cell</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
 </div>
 {% endexample %}
 
 			<h3>Both Vertical and Horizontal (<code>--fl-margin-h: 1em; --fl-margin-v: .5em</code>)</h3>
 {% example "html" %}
 <div class="fl fl-debug" style="--fl-margin-h: 1em; --fl-margin-v: .5em">
-	<div class="fl-cell">First cell</div>
-	<div class="fl-cell">Second cell</div>
-	<div class="fl-cell">Third cell</div>
-	<div class="fl-cell">Fourth cell</div>
-	<div class="fl-cell">Fifth cell</div>
+	<div>First cell</div>
+	<div>Second cell</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
 </div>
 {% endexample %}
 
@@ -163,11 +160,11 @@
 			<h3>Single Column below <code>25em</code> (<code>400px</code>) <em>Container</em> Width</h3>
 {% example "html" %}
 <div class="fl" style="--fl-stackpoint: 25em; --fl-margin-h: 1em; --fl-margin-v: .5em;">
-	<div class="fl-cell">First cell</div>
-	<div class="fl-cell">Second cell</div>
-	<div class="fl-cell">Third cell</div>
-	<div class="fl-cell">Fourth cell</div>
-	<div class="fl-cell">Fifth cell</div>
+	<div>First cell</div>
+	<div>Second cell</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
 </div>
 {% endexample %}
 
@@ -179,33 +176,33 @@
 			<h3>Horizontal</h3>
 {% example "html" %}
 <div class="fl fl-separator-h" style="--fl-margin-h: 1em; --fl-margin-v: .5em; --fl-separator-color: #333">
-	<div class="fl-cell">First cell</div>
-	<div class="fl-cell">Second cell</div>
-	<div class="fl-cell">Third cell</div>
-	<div class="fl-cell">Fourth cell</div>
-	<div class="fl-cell">Fifth cell</div>
+	<div>First cell</div>
+	<div>Second cell</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
 </div>
 {% endexample %}
 
 			<h3>Vertical</h3>
 {% example "html" %}
 <div class="fl fl-separator-v" style="--fl-margin-h: 1em; --fl-margin-v: 1em; --fl-separator-color: #333">
-	<div class="fl-cell">First cell</div>
-	<div class="fl-cell">Second cell</div>
-	<div class="fl-cell">Third cell</div>
-	<div class="fl-cell">Fourth cell</div>
-	<div class="fl-cell">Fifth cell</div>
+	<div>First cell</div>
+	<div>Second cell</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
 </div>
 {% endexample %}
 
 			<h3>Both Horizontal and Vertical</h3>
 {% example "html" %}
 <div class="fl fl-separator-h fl-separator-v" style="--fl-margin-h: 1em; --fl-margin-v: 1em; --fl-separator-color: #333">
-	<div class="fl-cell">First cell</div>
-	<div class="fl-cell">Second cell</div>
-	<div class="fl-cell">Third cell</div>
-	<div class="fl-cell">Fourth cell</div>
-	<div class="fl-cell">Fifth cell</div>
+	<div>First cell</div>
+	<div>Second cell</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
 </div>
 {% endexample %}
 
@@ -215,11 +212,11 @@
 
 {% example "html" %}
 <div class="fl fl-debug" style="--fl-margin-h: 1em; --fl-margin-v: .5em;">
-	<div class="fl-cell">First cell</div>
-	<div class="fl-cell fl-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
-	<div class="fl-cell">Third cell</div>
-	<div class="fl-cell">Fourth cell</div>
-	<div class="fl-cell">Fifth cell</div>
+	<div>First cell</div>
+	<div class="fl-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
 </div>
 {% endexample %}
 
@@ -229,11 +226,11 @@
 
 {% example "html" %}
 <div class="fl fl-inline fl-debug" style="--fl-margin-h: 1em; --fl-margin-v: .5em;">
-	<div class="fl-cell">First cell</div>
-	<div class="fl-cell fl-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
-	<div class="fl-cell">Third cell</div>
-	<div class="fl-cell">Fourth cell</div>
-	<div class="fl-cell">Fifth cell</div>
+	<div>First cell</div>
+	<div class="fl-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
 </div>
 {% endexample %}
 		</main>
