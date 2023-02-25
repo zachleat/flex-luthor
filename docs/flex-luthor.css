@@ -1,39 +1,39 @@
 /* Layout component code */
-.fg-layout {
+.fl {
   /* The custom properties should not inherit from parent layouts */
-  --fg-layout-stackpoint: initial;
-  --fg-layout-margin-h: 0px; /* This needs to have a unit for calc() below */
-  --fg-layout-margin-v: 0px; /* This needs to have a unit for calc() below */
+  --fl-stackpoint: initial;
+  --fl-margin-h: 0px; /* This needs to have a unit for calc() below */
+  --fl-margin-v: 0px; /* This needs to have a unit for calc() below */
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-top: calc(-1 * var(--fg-layout-margin-v, 0px));
-  margin-left: calc(-1 * var(--fg-layout-margin-h, 0px));
+  margin-top: calc(-1 * var(--fl-margin-v, 0px));
+  margin-left: calc(-1 * var(--fl-margin-h, 0px));
 }
-.fg-layout-cell {
+.fl-cell {
   /* if a margin is in play, account for this in our stackpoint calculations */
   /* notably this will also work if a stackpoint is not used. */
-  --fg-layout-margin-mod: calc( var(--fg-layout-stackpoint, -1 * var(--fg-layout-margin-h, 0px)) - var(--fg-layout-stackpoint, 0px) + var(--fg-layout-margin-h, 0px) );
-  --fg-layout-stackpoint-calc: calc( ( var(--fg-layout-stackpoint, 100%) - 100% + var(--fg-layout-margin-mod, 0px) ) * 999);
+  --fl-margin-mod: calc( var(--fl-stackpoint, -1 * var(--fl-margin-h, 0px)) - var(--fl-stackpoint, 0px) + var(--fl-margin-h, 0px) );
+  --fl-stackpoint-calc: calc( ( var(--fl-stackpoint, 100%) - 100% + var(--fl-margin-mod, 0px) ) * 999);
 
   flex-grow: 1;
-  /* This will always have a value, due to CSS variable defaults set in .fg-layout above */
-  flex-basis: var(--fg-layout-stackpoint-calc);
+  /* This will always have a value, due to CSS variable defaults set in .fl above */
+  flex-basis: var(--fl-stackpoint-calc);
   margin: 0;
-  margin-top: var(--fg-layout-margin-v, 0);
-  margin-left: var(--fg-layout-margin-h, 0);
+  margin-top: var(--fl-margin-v, 0);
+  margin-left: var(--fl-margin-h, 0);
 }
-.fg-layout-cell-wrap {
+.fl-cell-wrap {
   flex-basis: auto;
 }
 
 /* Flex layout inline */
-.fg-layout-inline > .fg-layout-cell {
+.fl-inline > .fl-cell {
   flex-grow: 0;
 }
 
 /* Debug */
-.fg-layout-debug-outline .fg-layout-cell {
+.fl-debug-outline .fl-cell {
   outline: 1px dotted rgba(0,0,0,.4);
   outline-offset: -1px;
 }

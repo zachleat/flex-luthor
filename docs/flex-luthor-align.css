@@ -1,24 +1,24 @@
-.fg-layout-cell-align-v-center,
-.fg-layout-cell-align-v-end,
-.fg-layout-cell-align-h-center,
-.fg-layout-cell-align-h-end {
+.fl-cell-align-v-center,
+.fl-cell-align-v-end,
+.fl-cell-align-h-center,
+.fl-cell-align-h-end {
   display: flex;
 }
-.fg-layout-cell-align-v-center {
+.fl-cell-align-v-center {
   align-items: center;
 }
-.fg-layout-cell-align-v-end {
+.fl-cell-align-v-end {
   align-items: flex-end;
 }
-.fg-layout-cell-align-h-center {
+.fl-cell-align-h-center {
   justify-content: center;
 }
-.fg-layout-cell-align-h-end {
+.fl-cell-align-h-end {
   justify-content: flex-end;
 }
-.fg-layout-cell-align-v-center > .fg-layout,
-.fg-layout-cell-align-v-end > .fg-layout,
-.fg-layout-cell-align-h-center > .fg-layout,
-.fg-layout-cell-align-h-end > .fg-layout {
+.fl-cell-align-v-center > .fl,
+.fl-cell-align-v-end > .fl,
+.fl-cell-align-h-center > .fl,
+.fl-cell-align-h-end > .fl {
   flex-grow: 1;
 }

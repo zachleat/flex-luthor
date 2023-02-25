@@ -1,28 +1,28 @@
 /* Separators */
 @supports (clip-path: inset(0px 0px)) or (-webkit-clip-path: inset(0px 0px)) {
-  .fg-layout-separator-v,
-  .fg-layout-separator-h {
-    -webkit-clip-path: inset(var(--fg-layout-margin-v, 0px) 0 0 var(--fg-layout-margin-h, 0px));
-    clip-path: inset(var(--fg-layout-margin-v, 0px) 0 0 var(--fg-layout-margin-h, 0px));
+  .fl-separator-v,
+  .fl-separator-h {
+    -webkit-clip-path: inset(var(--fl-margin-v, 0px) 0 0 var(--fl-margin-h, 0px));
+    clip-path: inset(var(--fl-margin-v, 0px) 0 0 var(--fl-margin-h, 0px));
   }
-  .fg-layout-separator-v > .fg-layout-cell,
-  .fg-layout-separator-h > .fg-layout-cell {
+  .fl-separator-v > .fl-cell,
+  .fl-separator-h > .fl-cell {
     position: relative;
   }
-  .fg-layout-separator-h > .fg-layout-cell:before {
+  .fl-separator-h > .fl-cell:before {
     content: "";
     position: absolute;
-    left: calc(-.5 * var(--fg-layout-margin-h, 0) - .5px);
+    left: calc(-.5 * var(--fl-margin-h, 0) - .5px);
     top: 0;
     bottom: 0;
-    border-left: 1px solid var(--fg-layout-separator-h-color, var(--fg-layout-separator-color, rgba(162,208,239,.35)));
+    border-left: 1px solid var(--fl-separator-h-color, var(--fl-separator-color, rgba(162,208,239,.35)));
   }
-  .fg-layout-separator-v > .fg-layout-cell:after {
+  .fl-separator-v > .fl-cell:after {
     content: "";
     position: absolute;
     left: 0;
-    top: calc(-.5 * var(--fg-layout-margin-v, 0) - 1px);
+    top: calc(-.5 * var(--fl-margin-v, 0) - 1px);
     right: 0;
-    border-top: 1px solid var(--fg-layout-separator-v-color, var(--fg-layout-separator-color, rgba(162,208,239,.35)));
+    border-top: 1px solid var(--fl-separator-v-color, var(--fl-separator-color, rgba(162,208,239,.35)));
   }
 }

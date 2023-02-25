@@ -84,7 +84,7 @@
 		/* Code */
 
 		/* Flex Luthor demo styles */
-		.demo-fg-layout-minwidth > .fg-layout-cell {
+		.demo-fl-minwidth > .fl-cell {
 			min-width: 100px;
 		}
 		</style>
@@ -98,9 +98,9 @@
 			<h2>Simple Layouts</h2>
 			<h3>Two Column</h3>
 {% example "html" %}
-<div class="fg-layout fg-layout-debug-outline">
-	<div class="fg-layout-cell">First cell</div>
-	<div class="fg-layout-cell">Second cell</div>
+<div class="fl fl-debug-outline">
+	<div class="fl-cell">First cell</div>
+	<div class="fl-cell">Second cell</div>
 </div>
 {% endexample %}
 
@@ -108,12 +108,12 @@
 			<p>Adding more cells divides the container evenly.</p>
 
 {% example "html" %}
-<div class="fg-layout fg-layout-debug-outline">
-	<div class="fg-layout-cell">First cell</div>
-	<div class="fg-layout-cell">Second cell</div>
-	<div class="fg-layout-cell">Third cell</div>
-	<div class="fg-layout-cell">Fourth cell</div>
-	<div class="fg-layout-cell">Fifth cell</div>
+<div class="fl fl-debug-outline">
+	<div class="fl-cell">First cell</div>
+	<div class="fl-cell">Second cell</div>
+	<div class="fl-cell">Third cell</div>
+	<div class="fl-cell">Fourth cell</div>
+	<div class="fl-cell">Fifth cell</div>
 </div>
 {% endexample %}
 
@@ -121,36 +121,36 @@
 
 			<p>Margins only show between cells. Horizontal margins are not shown when cells are all stacked. Vertical margins are not shown when cells are in a single row.</p>
 
-			<h3>Horizontal (<code>--fg-layout-margin-h: 1em</code>)</h3>
+			<h3>Horizontal (<code>--fl-margin-h: 1em</code>)</h3>
 {% example "html" %}
-<div class="fg-layout fg-layout-debug-outline" style="--fg-layout-margin-h: 1em">
-	<div class="fg-layout-cell">First cell</div>
-	<div class="fg-layout-cell">Second cell</div>
-	<div class="fg-layout-cell">Third cell</div>
-	<div class="fg-layout-cell">Fourth cell</div>
-	<div class="fg-layout-cell">Fifth cell</div>
+<div class="fl fl-debug-outline" style="--fl-margin-h: 1em">
+	<div class="fl-cell">First cell</div>
+	<div class="fl-cell">Second cell</div>
+	<div class="fl-cell">Third cell</div>
+	<div class="fl-cell">Fourth cell</div>
+	<div class="fl-cell">Fifth cell</div>
 </div>
 {% endexample %}
 
-			<h3>Vertical  (<code>--fg-layout-margin-v: .5em</code>)</h3>
+			<h3>Vertical  (<code>--fl-margin-v: .5em</code>)</h3>
 {% example "html" %}
-<div class="fg-layout fg-layout-debug-outline" style="--fg-layout-margin-v: .5em">
-	<div class="fg-layout-cell">First cell</div>
-	<div class="fg-layout-cell">Second cell</div>
-	<div class="fg-layout-cell">Third cell</div>
-	<div class="fg-layout-cell">Fourth cell</div>
-	<div class="fg-layout-cell">Fifth cell</div>
+<div class="fl fl-debug-outline" style="--fl-margin-v: .5em">
+	<div class="fl-cell">First cell</div>
+	<div class="fl-cell">Second cell</div>
+	<div class="fl-cell">Third cell</div>
+	<div class="fl-cell">Fourth cell</div>
+	<div class="fl-cell">Fifth cell</div>
 </div>
 {% endexample %}
 
-			<h3>Both Vertical and Horizontal (<code>--fg-layout-margin-h: 1em; --fg-layout-margin-v: .5em</code>)</h3>
+			<h3>Both Vertical and Horizontal (<code>--fl-margin-h: 1em; --fl-margin-v: .5em</code>)</h3>
 {% example "html" %}
-<div class="fg-layout fg-layout-debug-outline" style="--fg-layout-margin-h: 1em; --fg-layout-margin-v: .5em">
-	<div class="fg-layout-cell">First cell</div>
-	<div class="fg-layout-cell">Second cell</div>
-	<div class="fg-layout-cell">Third cell</div>
-	<div class="fg-layout-cell">Fourth cell</div>
-	<div class="fg-layout-cell">Fifth cell</div>
+<div class="fl fl-debug-outline" style="--fl-margin-h: 1em; --fl-margin-v: .5em">
+	<div class="fl-cell">First cell</div>
+	<div class="fl-cell">Second cell</div>
+	<div class="fl-cell">Third cell</div>
+	<div class="fl-cell">Fourth cell</div>
+	<div class="fl-cell">Fifth cell</div>
 </div>
 {% endexample %}
 
@@ -160,12 +160,12 @@
 
 			<h3>Single Column below <code>25em</code> (<code>400px</code>) <em>Container</em> Width</h3>
 {% example "html" %}
-<div class="fg-layout" style="--fg-layout-stackpoint: 25em; --fg-layout-margin-h: 1em; --fg-layout-margin-v: .5em;">
-	<div class="fg-layout-cell">First cell</div>
-	<div class="fg-layout-cell">Second cell</div>
-	<div class="fg-layout-cell">Third cell</div>
-	<div class="fg-layout-cell">Fourth cell</div>
-	<div class="fg-layout-cell">Fifth cell</div>
+<div class="fl" style="--fl-stackpoint: 25em; --fl-margin-h: 1em; --fl-margin-v: .5em;">
+	<div class="fl-cell">First cell</div>
+	<div class="fl-cell">Second cell</div>
+	<div class="fl-cell">Third cell</div>
+	<div class="fl-cell">Fourth cell</div>
+	<div class="fl-cell">Fifth cell</div>
 </div>
 {% endexample %}
 
@@ -176,34 +176,34 @@
 
 			<h3>Horizontal</h3>
 {% example "html" %}
-<div class="fg-layout fg-layout-separator-h" style="--fg-layout-margin-h: 1em; --fg-layout-margin-v: .5em; --fg-layout-separator-color: #333">
-	<div class="fg-layout-cell">First cell</div>
-	<div class="fg-layout-cell">Second cell</div>
-	<div class="fg-layout-cell">Third cell</div>
-	<div class="fg-layout-cell">Fourth cell</div>
-	<div class="fg-layout-cell">Fifth cell</div>
+<div class="fl fl-separator-h" style="--fl-margin-h: 1em; --fl-margin-v: .5em; --fl-separator-color: #333">
+	<div class="fl-cell">First cell</div>
+	<div class="fl-cell">Second cell</div>
+	<div class="fl-cell">Third cell</div>
+	<div class="fl-cell">Fourth cell</div>
+	<div class="fl-cell">Fifth cell</div>
 </div>
 {% endexample %}
 
 			<h3>Vertical</h3>
 {% example "html" %}
-<div class="fg-layout fg-layout-separator-v" style="--fg-layout-margin-h: 1em; --fg-layout-margin-v: 1em; --fg-layout-separator-color: #333">
-	<div class="fg-layout-cell">First cell</div>
-	<div class="fg-layout-cell">Second cell</div>
-	<div class="fg-layout-cell">Third cell</div>
-	<div class="fg-layout-cell">Fourth cell</div>
-	<div class="fg-layout-cell">Fifth cell</div>
+<div class="fl fl-separator-v" style="--fl-margin-h: 1em; --fl-margin-v: 1em; --fl-separator-color: #333">
+	<div class="fl-cell">First cell</div>
+	<div class="fl-cell">Second cell</div>
+	<div class="fl-cell">Third cell</div>
+	<div class="fl-cell">Fourth cell</div>
+	<div class="fl-cell">Fifth cell</div>
 </div>
 {% endexample %}
 
 			<h3>Both Horizontal and Vertical</h3>
 {% example "html" %}
-<div class="fg-layout fg-layout-separator-h fg-layout-separator-v" style="--fg-layout-margin-h: 1em; --fg-layout-margin-v: 1em; --fg-layout-separator-color: #333">
-	<div class="fg-layout-cell">First cell</div>
-	<div class="fg-layout-cell">Second cell</div>
-	<div class="fg-layout-cell">Third cell</div>
-	<div class="fg-layout-cell">Fourth cell</div>
-	<div class="fg-layout-cell">Fifth cell</div>
+<div class="fl fl-separator-h fl-separator-v" style="--fl-margin-h: 1em; --fl-margin-v: 1em; --fl-separator-color: #333">
+	<div class="fl-cell">First cell</div>
+	<div class="fl-cell">Second cell</div>
+	<div class="fl-cell">Third cell</div>
+	<div class="fl-cell">Fourth cell</div>
+	<div class="fl-cell">Fifth cell</div>
 </div>
 {% endexample %}
 
@@ -212,26 +212,26 @@
 			<p>By default, the content inside of a cell will wrap before the cell will wrap to a new line. To swap this so that the cell will wrap <em>before</em> the content wraps, add the <code>flex-cell-wrap</code>.</p>
 
 {% example "html" %}
-<div class="fg-layout fg-layout-debug-outline" style="--fg-layout-margin-h: 1em; --fg-layout-margin-v: .5em;">
-	<div class="fg-layout-cell">First cell</div>
-	<div class="fg-layout-cell fg-layout-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
-	<div class="fg-layout-cell">Third cell</div>
-	<div class="fg-layout-cell">Fourth cell</div>
-	<div class="fg-layout-cell">Fifth cell</div>
+<div class="fl fl-debug-outline" style="--fl-margin-h: 1em; --fl-margin-v: .5em;">
+	<div class="fl-cell">First cell</div>
+	<div class="fl-cell fl-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
+	<div class="fl-cell">Third cell</div>
+	<div class="fl-cell">Fourth cell</div>
+	<div class="fl-cell">Fifth cell</div>
 </div>
 {% endexample %}
 
 			<h2>Inline Layout</h2>
 
-			<p>Cells only take up their content width. This disables <code>flex-grow</code> on the cells. Works with <code>fg-layout-cell-wrap</code> too.</p>
+			<p>Cells only take up their content width. This disables <code>flex-grow</code> on the cells. Works with <code>fl-cell-wrap</code> too.</p>
 
 {% example "html" %}
-<div class="fg-layout fg-layout-inline fg-layout-debug-outline" style="--fg-layout-margin-h: 1em; --fg-layout-margin-v: .5em;">
-	<div class="fg-layout-cell">First cell</div>
-	<div class="fg-layout-cell fg-layout-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
-	<div class="fg-layout-cell">Third cell</div>
-	<div class="fg-layout-cell">Fourth cell</div>
-	<div class="fg-layout-cell">Fifth cell</div>
+<div class="fl fl-inline fl-debug-outline" style="--fl-margin-h: 1em; --fl-margin-v: .5em;">
+	<div class="fl-cell">First cell</div>
+	<div class="fl-cell fl-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
+	<div class="fl-cell">Third cell</div>
+	<div class="fl-cell">Fourth cell</div>
+	<div class="fl-cell">Fifth cell</div>
 </div>
 {% endexample %}
 		</main>
