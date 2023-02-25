@@ -86,6 +86,9 @@
 		.fl > * {
 			padding: 1em;
 		}
+		.demo-fl-debug-sep > * {
+			background-color: #f4f4f4;
+		}
 		</style>
 		<script src="https://unpkg.com/resizeasaurus@1.0.2/resizeasaurus.js" async></script>
 	</head>
@@ -159,7 +162,7 @@
 
 			<h3>Single Column below <code>25em</code> (<code>400px</code>) <em>Container</em> Width</h3>
 {% example "html" %}
-<div class="fl" style="--fl-stackpoint: 25em; --fl-margin-h: 1em; --fl-margin-v: .5em;">
+<div class="fl fl-debug" style="--fl-stackpoint: 25em; --fl-margin-h: 1em; --fl-margin-v: .5em;">
 	<div>First cell</div>
 	<div>Second cell</div>
 	<div>Third cell</div>
@@ -175,7 +178,7 @@
 
 			<h3>Horizontal</h3>
 {% example "html" %}
-<div class="fl fl-separator-h" style="--fl-margin-h: 1em; --fl-margin-v: .5em; --fl-separator-color: #333">
+<div class="fl demo-fl-debug-sep fl-separator-h" style="--fl-margin-h: 1em; --fl-margin-v: .5em; --fl-separator-color: #333">
 	<div>First cell</div>
 	<div>Second cell</div>
 	<div>Third cell</div>
@@ -186,7 +189,7 @@
 
 			<h3>Vertical</h3>
 {% example "html" %}
-<div class="fl fl-separator-v" style="--fl-margin-h: 1em; --fl-margin-v: 1em; --fl-separator-color: #333">
+<div class="fl demo-fl-debug-sep fl-separator-v" style="--fl-margin-h: 1em; --fl-margin-v: 1em; --fl-separator-color: #333">
 	<div>First cell</div>
 	<div>Second cell</div>
 	<div>Third cell</div>
@@ -197,7 +200,7 @@
 
 			<h3>Both Horizontal and Vertical</h3>
 {% example "html" %}
-<div class="fl fl-separator-h fl-separator-v" style="--fl-margin-h: 1em; --fl-margin-v: 1em; --fl-separator-color: #333">
+<div class="fl demo-fl-debug-sep fl-separator-h fl-separator-v" style="--fl-margin-h: 1em; --fl-margin-v: 1em; --fl-separator-color: #333">
 	<div>First cell</div>
 	<div>Second cell</div>
 	<div>Third cell</div>
