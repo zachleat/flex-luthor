@@ -6,9 +6,8 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy("*.css");
 	eleventyConfig.addPassthroughCopy("demo-src/*.css");
-	eleventyConfig.setBrowserSyncConfig({
-		ui: false,
-		ghostMode: false
+	eleventyConfig.setServerOptions({
+		domDiff: false
 	});
 
 	eleventyConfig.addPairedShortcode("example", function(content, args) {

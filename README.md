@@ -1,5 +1,3 @@
-:warning: This project is archived and the repository is no longer maintained. 
-
 # Flex Luthor
 
 A small wrapper library to help with responsive intrinsic-sized Flexbox layouts that wrap based on content and container width (avoiding viewport-based media queries when possible).
@@ -10,8 +8,12 @@ A small wrapper library to help with responsive intrinsic-sized Flexbox layouts 
 
 ## Installation
 
-Available on [npm](https://www.npmjs.com/package/flex-luthor).
+Available on [npm](https://www.npmjs.com/package/@zachleat/flex-luthor).
 
 ```
 npm install flex-luthor --save
 ```
+
+## Versions
+
+* `v1.0.0`: Forked from [`filamentgroup/flex-luthor`](https://github.com/filamentgroup/flex-luthor/) and updated to support Flexbox with `gap`.
