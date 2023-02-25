@@ -28,7 +28,7 @@
 }
 
 /* Debug */
-.fl-debug-outline .fl-cell {
+.fl-debug .fl-cell {
   outline: 1px dotted rgba(0,0,0,.4);
   outline-offset: -1px;
 }

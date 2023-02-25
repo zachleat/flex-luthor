@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>The Flex Luthor Flexbox Layout System</title>
 		<link rel="stylesheet" href="flex-luthor.css">
-		<link rel="stylesheet" href="flex-luthor-align.css">
 		<link rel="stylesheet" href="flex-luthor-separators.css">
 		<link rel="stylesheet" href="flex-luthor-debug-fill.css">
 		<link rel="stylesheet" href="https://unpkg.com/resizeasaurus@1.0.2/resizeasaurus.css">
@@ -84,6 +83,9 @@
 		/* Code */
 
 		/* Flex Luthor demo styles */
+		.fl-cell {
+			padding: 1em;
+		}
 		.demo-fl-minwidth > .fl-cell {
 			min-width: 100px;
 		}
@@ -92,13 +94,13 @@
 	</head>
 	<body>
 		<h1>The Flex Luthor Flexbox Layout System</h1>
-		<p>Alternatively known as <em>Oh no why did they make an abstraction for Flexbox</em>. View <a href="https://github.com/filamentgroup/flex-luthor/">on GitHub</a>.</p>
+		<p>Alternatively known as <em>Oh no why did they make an abstraction for Flexbox</em>. View <a href="https://github.com/zachleat/flex-luthor/">on GitHub</a>.</p>
 
 		<main>
 			<h2>Simple Layouts</h2>
 			<h3>Two Column</h3>
 {% example "html" %}
-<div class="fl fl-debug-outline">
+<div class="fl fl-debug">
 	<div class="fl-cell">First cell</div>
 	<div class="fl-cell">Second cell</div>
 </div>
@@ -108,7 +110,7 @@
 			<p>Adding more cells divides the container evenly.</p>
 
 {% example "html" %}
-<div class="fl fl-debug-outline">
+<div class="fl fl-debug">
 	<div class="fl-cell">First cell</div>
 	<div class="fl-cell">Second cell</div>
 	<div class="fl-cell">Third cell</div>
@@ -123,7 +125,7 @@
 
 			<h3>Horizontal (<code>--fl-margin-h: 1em</code>)</h3>
 {% example "html" %}
-<div class="fl fl-debug-outline" style="--fl-margin-h: 1em">
+<div class="fl fl-debug" style="--fl-margin-h: 1em">
 	<div class="fl-cell">First cell</div>
 	<div class="fl-cell">Second cell</div>
 	<div class="fl-cell">Third cell</div>
@@ -134,7 +136,7 @@
 
 			<h3>Vertical  (<code>--fl-margin-v: .5em</code>)</h3>
 {% example "html" %}
-<div class="fl fl-debug-outline" style="--fl-margin-v: .5em">
+<div class="fl fl-debug" style="--fl-margin-v: .5em">
 	<div class="fl-cell">First cell</div>
 	<div class="fl-cell">Second cell</div>
 	<div class="fl-cell">Third cell</div>
@@ -145,7 +147,7 @@
 
 			<h3>Both Vertical and Horizontal (<code>--fl-margin-h: 1em; --fl-margin-v: .5em</code>)</h3>
 {% example "html" %}
-<div class="fl fl-debug-outline" style="--fl-margin-h: 1em; --fl-margin-v: .5em">
+<div class="fl fl-debug" style="--fl-margin-h: 1em; --fl-margin-v: .5em">
 	<div class="fl-cell">First cell</div>
 	<div class="fl-cell">Second cell</div>
 	<div class="fl-cell">Third cell</div>
@@ -212,7 +214,7 @@
 			<p>By default, the content inside of a cell will wrap before the cell will wrap to a new line. To swap this so that the cell will wrap <em>before</em> the content wraps, add the <code>flex-cell-wrap</code>.</p>
 
 {% example "html" %}
-<div class="fl fl-debug-outline" style="--fl-margin-h: 1em; --fl-margin-v: .5em;">
+<div class="fl fl-debug" style="--fl-margin-h: 1em; --fl-margin-v: .5em;">
 	<div class="fl-cell">First cell</div>
 	<div class="fl-cell fl-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
 	<div class="fl-cell">Third cell</div>
@@ -226,7 +228,7 @@
 			<p>Cells only take up their content width. This disables <code>flex-grow</code> on the cells. Works with <code>fl-cell-wrap</code> too.</p>
 
 {% example "html" %}
-<div class="fl fl-inline fl-debug-outline" style="--fl-margin-h: 1em; --fl-margin-v: .5em;">
+<div class="fl fl-inline fl-debug" style="--fl-margin-h: 1em; --fl-margin-v: .5em;">
 	<div class="fl-cell">First cell</div>
 	<div class="fl-cell fl-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
 	<div class="fl-cell">Third cell</div>
