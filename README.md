@@ -4,7 +4,7 @@ A small wrapper library to help with responsive intrinsic-sized Flexbox layouts 
 
 ## Demo
 
-[https://filamentgroup.github.io/flex-luthor/](https://filamentgroup.github.io/flex-luthor/)
+[https://flex-luthor.zachleat.dev/](https://flex-luthor.zachleat.dev/)
 
 ## Installation
 
