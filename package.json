@@ -3,6 +3,9 @@
   "version": "3.0.0",
   "description": "A small wrapper library to help with responsive intrinsic-sized Flexbox layouts that wrap based on content and container width and avoiding viewport-based media queries.",
   "main": "flex-luthor.css",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "npx @11ty/eleventy --config=demo-src/eleventy.config.js --input=demo-src",
     "start": "npm run build -- --serve"
