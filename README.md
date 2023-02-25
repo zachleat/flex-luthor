@@ -16,4 +16,4 @@ npm install flex-luthor --save
 
 ## Versions
 
-* `v1.0.0`: Forked from [`filamentgroup/flex-luthor`](https://github.com/filamentgroup/flex-luthor/) and updated to support Flexbox with `gap`.
+* `v3.0.0`: Forked from [`filamentgroup/flex-luthor`](https://github.com/filamentgroup/flex-luthor/) and updated to support Flexbox with `gap`.
