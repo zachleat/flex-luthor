@@ -12,7 +12,7 @@
   .fl-separator-h > *:before {
     content: "";
     position: absolute;
-    left: calc(-.5 * var(--fl-margin-h, 0) - .5px);
+    left: calc(-.5 * var(--fl-gap-h, 0) - .5px);
     top: 0;
     bottom: 0;
     border-left: 1px solid var(--fl-separator-h-color, var(--fl-separator-color, rgba(162,208,239,.35)));
@@ -21,7 +21,7 @@
     content: "";
     position: absolute;
     left: 0;
-    top: calc(-.5 * var(--fl-margin-v, 0) - 1px);
+    top: calc(-.5 * var(--fl-gap-v, 0) - 1px);
     right: 0;
     border-top: 1px solid var(--fl-separator-v-color, var(--fl-separator-color, rgba(162,208,239,.35)));
   }

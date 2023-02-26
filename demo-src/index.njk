@@ -119,13 +119,13 @@
 </div>
 {% endexample %}
 
-			<h2>Margins Between Cells</h2>
+			<h2>Gap Between Cells</h2>
 
-			<p>Margins only show between cells. Horizontal margins are not shown when cells are all stacked. Vertical margins are not shown when cells are in a single row.</p>
+			<p>Gaps are defaulted to <code>1em</code> horizontal and <code>.5em</code> vertical. They only show between cells. Horizontal gaps are not shown when cells are all stacked. Vertical gaps are not shown when cells are in a single row.</p>
 
-			<h3>Horizontal (<code>--fl-margin-h: 1em</code>)</h3>
+			<h3>Horizontal (<code>--fl-gap-h: 2em</code>)</h3>
 {% example "html" %}
-<div class="fl fl-debug" style="--fl-margin-h: 1em">
+<div class="fl fl-debug" style="--fl-gap-h: 2em">
 	<div>First cell</div>
 	<div>Second cell</div>
 	<div>Third cell</div>
@@ -134,9 +134,9 @@
 </div>
 {% endexample %}
 
-			<h3>Vertical  (<code>--fl-margin-v: .5em</code>)</h3>
+			<h3>Vertical  (<code>--fl-gap-h: 1em</code>)</h3>
 {% example "html" %}
-<div class="fl fl-debug" style="--fl-margin-v: .5em">
+<div class="fl fl-debug" style="--fl-gap-v: 1em">
 	<div>First cell</div>
 	<div>Second cell</div>
 	<div>Third cell</div>
@@ -145,9 +145,9 @@
 </div>
 {% endexample %}
 
-			<h3>Both Vertical and Horizontal (<code>--fl-margin-h: 1em; --fl-margin-v: .5em</code>)</h3>
+			<h3>Both Vertical and Horizontal (<code>--fl-gap-h: 2em; --fl-gap-v: 1em</code>)</h3>
 {% example "html" %}
-<div class="fl fl-debug" style="--fl-margin-h: 1em; --fl-margin-v: .5em">
+<div class="fl fl-debug" style="--fl-gap-h: 2em; --fl-gap-v: 1em">
 	<div>First cell</div>
 	<div>Second cell</div>
 	<div>Third cell</div>
@@ -162,7 +162,7 @@
 
 			<h3>Single Column below <code>27em</code> (<code>432px</code>) <em>Container</em> Width</h3>
 {% example "html" %}
-<div class="fl fl-debug" style="--fl-stackpoint: 27em; --fl-margin-h: 1em; --fl-margin-v: .5em;">
+<div class="fl fl-debug" style="--fl-stackpoint: 27em;">
 	<div>First cell</div>
 	<div>Second cell</div>
 	<div>Third cell</div>
@@ -178,7 +178,7 @@
 
 			<h3>Horizontal</h3>
 {% example "html" %}
-<div class="fl demo-fl-debug-sep fl-separator-h" style="--fl-margin-h: 1em; --fl-margin-v: .5em; --fl-separator-color: #333">
+<div class="fl demo-fl-debug-sep fl-separator-h" style="--fl-separator-color: #333">
 	<div>First cell</div>
 	<div>Second cell</div>
 	<div>Third cell</div>
@@ -189,7 +189,7 @@
 
 			<h3>Vertical</h3>
 {% example "html" %}
-<div class="fl demo-fl-debug-sep fl-separator-v" style="--fl-margin-h: 1em; --fl-margin-v: 1em; --fl-separator-color: #333">
+<div class="fl demo-fl-debug-sep fl-separator-v" style="--fl-gap-v: 1em; --fl-separator-color: #333">
 	<div>First cell</div>
 	<div>Second cell</div>
 	<div>Third cell</div>
@@ -200,7 +200,7 @@
 
 			<h3>Both Horizontal and Vertical</h3>
 {% example "html" %}
-<div class="fl demo-fl-debug-sep fl-separator-h fl-separator-v" style="--fl-margin-h: 1em; --fl-margin-v: 1em; --fl-separator-color: #333">
+<div class="fl demo-fl-debug-sep fl-separator-h fl-separator-v" style="--fl-gap-v: 1em; --fl-separator-color: #333">
 	<div>First cell</div>
 	<div>Second cell</div>
 	<div>Third cell</div>
@@ -214,7 +214,7 @@
 			<p>By default, the content inside of a cell will wrap before the cell will wrap to a new line. To swap this so that the cell will wrap <em>before</em> the content wraps, add the <code>flex-cell-wrap</code>.</p>
 
 {% example "html" %}
-<div class="fl fl-debug" style="--fl-margin-h: 1em; --fl-margin-v: .5em;">
+<div class="fl fl-debug">
 	<div>First cell</div>
 	<div class="fl-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
 	<div>Third cell</div>
@@ -228,7 +228,7 @@
 			<p>Cells only take up their content width. This disables <code>flex-grow</code> on the cells. Works with <code>fl-cell-wrap</code> too.</p>
 
 {% example "html" %}
-<div class="fl fl-inline fl-debug" style="--fl-margin-h: 1em; --fl-margin-v: .5em;">
+<div class="fl fl-inline fl-debug">
 	<div>First cell</div>
 	<div class="fl-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
 	<div>Third cell</div>

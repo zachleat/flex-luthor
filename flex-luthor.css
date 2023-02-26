@@ -2,17 +2,17 @@
 .fl {
   /* The custom properties should not inherit from parent layouts */
   --fl-stackpoint: initial;
-  --fl-margin-h: 0px; /* This needs to have a unit for calc() below */
-  --fl-margin-v: 0px; /* This needs to have a unit for calc() below */
+  --fl-gap-h: 1em; /* This needs to have a unit for calc() below */
+  --fl-gap-v: .5em; /* This needs to have a unit for calc() below */
   display: flex;
   flex-wrap: wrap;
-  gap: var(--fl-margin-v, 0px) var(--fl-margin-h, 0px);
+  gap: var(--fl-gap-v, 0px) var(--fl-gap-h, 0px);
 }
 .fl > * {
   /* if a margin is in play, account for this in our stackpoint calculations */
   /* notably this will also work if a stackpoint is not used. */
-  --fl-margin-mod: calc( var(--fl-stackpoint, -1 * var(--fl-margin-h, 0px)) - var(--fl-stackpoint, 0px) );
-  --fl-stackpoint-calc: calc( ( var(--fl-stackpoint, 100%) - 100% + var(--fl-margin-mod, 0px) ) * 999);
+  --fl-gap-mod: calc( var(--fl-stackpoint, -1 * var(--fl-gap-h, 0px)) - var(--fl-stackpoint, 0px) );
+  --fl-stackpoint-calc: calc( ( var(--fl-stackpoint, 100%) - 100% + var(--fl-gap-mod, 0px) ) * 999);
 
   flex-grow: 1;
   /* This will always have a value, due to CSS variable defaults set in .fl above */
