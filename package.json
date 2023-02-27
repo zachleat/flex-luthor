@@ -1,6 +1,6 @@
 {
   "name": "@zachleat/flex-luthor",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "A small wrapper library to help with responsive intrinsic-sized Flexbox layouts that wrap based on content and container width and avoiding viewport-based media queries.",
   "main": "flex-luthor.css",
   "publishConfig": {
