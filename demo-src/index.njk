@@ -223,6 +223,18 @@
 </div>
 {% endexample %}
 
+			<p>You can apply this to all cells in the layout with <code>fl-nowrap</code> on the container.</p>
+
+{% example "html" %}
+<div class="fl fl-nowrap fl-debug">
+	<div>First cell</div>
+	<div class="fl-cell-wrap">This cell will wrap to a new line before wrapping its content</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
+</div>
+{% endexample %}
+
 			<h2>Inline Layout</h2>
 
 			<p>Cells only take up their content width. This disables <code>flex-grow</code> on the cells. Works with <code>fl-cell-wrap</code> too.</p>
