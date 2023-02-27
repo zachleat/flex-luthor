@@ -18,7 +18,9 @@
   /* This will always have a value, due to CSS variable defaults set in .fl above */
   flex-basis: var(--fl-stackpoint-calc);
 }
-.fl-cell-wrap {
+/* Prefer to wrap cells before content */
+.fl-nowrap > *,
+.fl-cell-wrap { /* or for an individual cell */
   flex-basis: auto;
 }
 
