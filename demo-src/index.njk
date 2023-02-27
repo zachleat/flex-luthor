@@ -209,6 +209,17 @@
 </div>
 {% endexample %}
 
+			<h3>Both Horizontal and Vertical (`rtl` direction)</h3>
+{% example "html" %}
+<div class="fl demo-fl-debug-sep fl-separator-h fl-separator-v" style="--fl-gap-v: 1em; --fl-separator-color: #333; direction: rtl">
+	<div>First cell</div>
+	<div>Second cell</div>
+	<div>Third cell</div>
+	<div>Fourth cell</div>
+	<div>Fifth cell</div>
+</div>
+{% endexample %}
+
 			<h2>Prefer to Wrap Cell Before Content</h2>
 
 			<p>By default, the content inside of a cell will wrap before the cell will wrap to a new line. To swap this so that the cell will wrap <em>before</em> the content wraps, add the <code>flex-cell-wrap</code>.</p>
