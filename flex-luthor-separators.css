@@ -25,4 +25,11 @@
     right: 0;
     border-top: 1px solid var(--fl-separator-v-color, var(--fl-separator-color, rgba(162,208,239,.35)));
   }
+  .fl-separator-v *:before {
+    top: calc(-.5 * var(--fl-gap-h, 0));
+    bottom: calc(-.5 * var(--fl-gap-h, 0) + 1px);
+  }
+  .fl-separator-v > *:after {
+    left: calc(-1 * var(--fl-gap-v, 0));
+  }
 }
