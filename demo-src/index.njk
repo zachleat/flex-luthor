@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="flex-luthor.css">
 		<link rel="stylesheet" href="flex-luthor-separators.css">
 		<link rel="stylesheet" href="flex-luthor-debug-fill.css">
-		<link rel="stylesheet" href="https://unpkg.com/resizeasaurus@1.0.2/resizeasaurus.css">
 		<link rel="stylesheet" href="prism-theme.css">
 		<style>
 		body {
@@ -17,12 +16,6 @@
 		}
 		p {
 			max-width: 42em;
-		}
-
-		/* Resizer demo styles */
-		.resizeasaurus {
-			margin-bottom: 1em;
-			background-color: transparent;
 		}
 
 		.source-details {
@@ -89,8 +82,15 @@
 		.demo-fl-debug-sep > * {
 			background-color: #f4f4f4;
 		}
+		resize-asaurus {
+			padding-bottom: 1.375em; /* 22px /16 */
+			border-bottom: .125em solid;
+			margin: 0 0 1em;
+		}
 		</style>
-		<script src="https://unpkg.com/resizeasaurus@1.0.2/resizeasaurus.js" async></script>
+
+		<!-- resizer via 3rd party CDN, not recommended for production use -->
+		<script type="module" src="https://esm.sh/@zachleat/resizeasaurus@4.0.1"></script>
 	</head>
 	<body>
 		<h1>The Flex Luthor Flexbox Layout System</h1>
