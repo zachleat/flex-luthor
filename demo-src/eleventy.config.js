@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPairedShortcode("example", function(content, args) {
 		let [language, ...highlightNumbers] = args.split(" ");
 
-		return `<resize-asaurus persist>
+		return `<resize-asaurus persist position="static">
 	${content}
 </resize-asaurus>
 <details class="source-details">
